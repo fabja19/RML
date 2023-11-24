@@ -1,0 +1,29 @@
+name: cuda118
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchvision
+  - einops
+  - matplotlib
+  - scikit-image
+  - torchinfo
+  - tensorboard
+  - ml-collections
+  - ipykernel
+  - ca-certificates
+  - openssl
+  - pytorch-lightning
+  - certifi
+  - pandas
+  - pip:
+    - docstring-parser==0.15
+    - importlib-resources==5.12.0
+    - jsonargparse==4.21.2
+    - nvidia-htop==1.0.5
+    - termcolor==2.3.0
+    - typeshed-client==2.3.0
+prefix: /home/fabianjaensch/.conda/envs/env_mamba/envs/cuda118

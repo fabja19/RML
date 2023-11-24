@@ -1,0 +1,30 @@
+data:
+  class_path: lib.pl_datamodule.LitRM_directional
+  init_args:
+    dataset_path: dataset
+    id_file: splits_0.1_0.1_seeds_1_2_ant_all.json
+    tx_one_hot: true
+    ndsms: true
+    ndsm_all: false
+    coords_euclidian: false
+    coords_cylindrical: false
+    coords_spherical: true
+    coords_ga: false
+    los_floor: true
+    los_top: true
+    los_z_min: false
+    los_z_min_rel: false
+    los_theta_max: false
+    ant_gain_floor: true
+    ant_gain_top: true
+    ant_gain_slices: false
+    ant_gain_los_slices: false
+    img: false
+    z_step: 4
+    z_max: 32
+    thresh: 0.2
+    augmentation: true
+    batch_size: 32
+    shuffle: true
+    num_workers: 8
+    pin_memory: true
