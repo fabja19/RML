@@ -245,7 +245,7 @@ class LitCNN(pl.LightningModule):
         for k in self.test_losses.keys():
             columns.append(k)
             columns.append(f'{k}_magnitude')
-            columns.append(f'{k}_normalized')
+            # columns.append(f'{k}_normalized')
         columns.append('pos_pixels')
         df = pd.DataFrame(columns=columns)
 
@@ -272,9 +272,9 @@ class LitCNN(pl.LightningModule):
 
                     row.append(losses[k][j].item())
                     row.append(magnitudes[k][j].item())
-                    row.append(losses[k][j].item() / (magnitudes[k][j].item() + 1e-4))
+                    # row.append(losses[k][j].item() / (magnitudes[k][j].item() + 1e-4))
                     losses_acc[k] += losses[k][j].item()
-                    losses_norm_acc[k] += losses[k][j].item() / (magnitudes[k][j].item() + 1e-4)
+                    # losses_norm_acc[k] += losses[k][j].item() / (magnitudes[k][j].item() + 1e-4)
                 row.append(pos_pixels[j].item())
                 df = pd.concat([df, pd.DataFrame([row], columns=columns)])
 
@@ -285,7 +285,7 @@ class LitCNN(pl.LightningModule):
             f.write(f'Test \t{time.strftime("%d.%m.%y-%H:%M:%S")}\nAverage losses/metrics: ({n_samples} samples)\n\n')
             ### calculate averages, save to test_log
             for k, v in losses_acc.items():
-                message = f'{k}:\t{v / n_samples} \t\tnormalized:\t{losses_norm_acc[k] / n_samples}\n'
+                message = f'{k}:\t{v / n_samples}\n'
                 print(message)
                 f.write(message)
             

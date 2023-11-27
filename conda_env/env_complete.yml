@@ -321,4 +321,3 @@ dependencies:
       - nvidia-htop==1.0.5
       - termcolor==2.3.0
       - typeshed-client==2.3.0
-prefix: /home/fabianjaensch/.conda/envs/env_mamba/envs/cudanew
