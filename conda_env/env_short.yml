@@ -1,4 +1,4 @@
-name: cuda118
+name: rmbd_env
 channels:
   - defaults
   - conda-forge
