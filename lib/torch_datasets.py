@@ -366,7 +366,7 @@ class RM_directional(RM):
         if self.azimuth:
             inputs.append(phi)
         if self.elevation:
-            inputs.extend([theta_build, theta_floor, theta_veg])
+            inputs.extend([theta_build / torch.pi, theta_floor / torch.pi, theta_veg / torch.pi])
         if self.img:
             img_arr = io.imread(self.dataset_path / "img" /  "img_{}_{}_{}.tif".format(*curr_id[:3]))
             for i in range(img_arr.shape[-1]):
