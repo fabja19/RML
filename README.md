@@ -1,6 +1,6 @@
 # Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments
 
-This is the official implementation of our experiments on learning radio map estimation with CNNs, described in [...].
+This is the official implementation of our experiments on learning radio map estimation with CNNs, described in "Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments" (soon on arXiv).
 
 ![alt text](sample.png "Sample")
 
