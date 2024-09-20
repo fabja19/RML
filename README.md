@@ -1,12 +1,12 @@
 # Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments
 
-This is the official implementation of our experiments on learning radio map estimation with CNNs, described in "Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments" (soon on arXiv).
+This is the official implementation of our experiments on learning radio map estimation with CNNs, described in ["Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments"](https://arxiv.org/abs/2402.00878).
 
 ![alt text](sample.png "Sample")
 
 ## Requirements
 
-The dataset can be downloaded from [here](https://zenodo.org/uploads/10210089) and is expected to be unpacked to the directory *./dataset*.
+The dataset can be downloaded from [zenodo](https://zenodo.org/uploads/10210089) and is expected to be unpacked to the directory *./dataset*.
 
 To install the required packages via conda run:
 
