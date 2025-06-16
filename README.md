@@ -1,3 +1,7 @@
+# Update
+
+For an updated version of this repo with a focus on estimation of radio maps from images, see [https://github.com/fabja19/RML_v2_img](https://github.com/fabja19/RML_v2_img).
+
 # Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments
 
 This is the official implementation of our experiments on learning radio map estimation with CNNs, described in ["Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments"](https://arxiv.org/abs/2402.00878).
