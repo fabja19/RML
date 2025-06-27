@@ -4,7 +4,25 @@ For an updated version of this repo with a focus on estimation of radio maps fro
 
 # Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments
 
-This is the official implementation of our experiments on learning radio map estimation with CNNs, described in ["Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments"](https://arxiv.org/abs/2402.00878).
+This is the official implementation of our experiments on learning radio map estimation with CNNs, described in ["Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments"](https://arxiv.org/abs/2402.00878). We build upon previous works on this topic such as RadioUNet or PMNet, and develop the approach further with a more realistic dataset based on 3D city models of real world locations. These feature detailed roof and tree canopy heights and shapes, obtained from public LiDAR data. The radio map simulations have been conducted with directive antennas on the Tx side. We compare different architectures and input modalities on this new dataset.
+
+If you find this useful and use our code, please cite our paper:
+
+> Fabian Jaensch, Giuseppe Caire and Begüm Demir, "[Radio Map Estimation -- An Open Dataset with Directive Transmitter Antennas and Initial Experiments]([https://arxiv.org/abs/2501.11493](https://arxiv.org/abs/2402.00878))", arXiv:2402.00878, 2024.
+```bibtex
+@misc{jaensch2024radiomapestimation,
+      title={Radio Map Estimation -- An Open Dataset with Directive Transmitter Antennas and Initial Experiments}, 
+      author={Fabian Jaensch and Giuseppe Caire and Begüm Demir},
+      year={2024},
+      eprint={2402.00878},
+      archivePrefix={arXiv},
+      primaryClass={cs.NI},
+      url={https://arxiv.org/abs/2402.00878}, 
+}
+```
+
+
+
 
 ![alt text](sample.png "Sample")
 
